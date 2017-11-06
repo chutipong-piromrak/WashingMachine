@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "930022249727",
+    "firebase_url": "https://washingmachine2-b39e2.firebaseio.com",
+    "project_id": "washingmachine2-b39e2",
+    "storage_bucket": "washingmachine2-b39e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930022249727:android:f85fbb6d468da577",
+        "android_client_info": {
+          "package_name": "com.example.leomossi.washingmachine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930022249727-tfnbnttf50ob6jlfqnusa77bnka5b4ik.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.leomossi.washingmachine",
+            "certificate_hash": "7af6fd4c7062fdec0eecf69770d73b637bb75a4a"
+          }
+        },
+        {
+          "client_id": "930022249727-j5u4dqgi60fds5gukgg8gjmqccoi5qr5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnOgfEU9_pd--2TCyPIzu5GyRBohFCdac"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "930022249727-j5u4dqgi60fds5gukgg8gjmqccoi5qr5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
