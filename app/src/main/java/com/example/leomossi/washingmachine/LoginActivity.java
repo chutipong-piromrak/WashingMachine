@@ -1,6 +1,7 @@
 package com.example.leomossi.washingmachine;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -48,13 +49,15 @@ public class LoginActivity extends AppCompatActivity {
 
     @OnClick(R.id.btn_login)
     void onClickLogin() {
-        Log.d("testLog", "loginSuccess");
         login();
     }
 
     @OnClick(R.id.link_signup)
     void onClickSignup() {
-        Log.d("testLog", "signupSuccess");
+        Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
+        startActivity(intent);
+        finish();
+        overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
     }
 
     public void login() {
@@ -100,17 +103,14 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            dialog.dismiss();
                             // Sign in success, update UI with the signed-in user's information
                             Toast.makeText(LoginActivity.this, "เข้าสู่ระบบสำเร็จ", Toast.LENGTH_SHORT).show();
                             FirebaseUser user = mAuth.getCurrentUser();
                         } else {
-                            dialog.dismiss();
                             // If sign in fails, display a message to the user.
                             Toast.makeText(LoginActivity.this, "เข้าสู่ระบบไม่สำเร็จ"+task.getException(), Toast.LENGTH_SHORT).show();
                         }
-
-                        // ...
+                        dialog.dismiss();
                     }
                 });
     }
